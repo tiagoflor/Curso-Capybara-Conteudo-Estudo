@@ -1,0 +1,12 @@
+---
+#quando rodamos ele, o mesmo buscara primeiro o default
+#pretty mostra as funcionalidades no console
+default:  --profile progress -p homolog -p chrome
+pretty: --format pretty 
+homolog: AMBIENTE=homolog  # adicionando valores a variavel ambiente
+producao: AMBIENTE=producao
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+html: --format html --out=reports/relatorio.html #usado para gerar relatorio
+
+

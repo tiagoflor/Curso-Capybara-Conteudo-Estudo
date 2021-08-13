@@ -1,0 +1,18 @@
+---
+#quando rodamos ele, o mesmo buscara primeiro o default
+#pretty mostra as funcionalidades no console
+default:  --profile progress -p homolog #-p producao
+pretty: --format pretty 
+progress: --format progress 
+homolog: AMBIENTE=homolog  # adicionando valores a variavel ambiente
+producao: AMBIENTE=producao
+
+#adicionado na aula 52
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless #para rodar navegador sem gpu
+firefox: BROWSER=firefox
+firefox_headless: BROWSER=firefox_headless #para rodar navegador sem gpu
+#safari: BROWSER=safari
+#ie: BROWSER=ie
+#poltergaist: BROWSER=poltergeist
+
